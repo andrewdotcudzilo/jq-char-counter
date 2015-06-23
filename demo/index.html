@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="./../src/char-counter.js"></script>
+        <link rel="stylesheet" type="text/css" href="./../css/char-counter.css" charset="utf-8" />
+
+
+    </head>
+
+
+
+    <body>
+
+        <script>
+        $(document).ready(function() {
+            $('.mytest').charCounter({classname:'chars-remaining2'});
+        });
+        </script>
+
+
+
+        <div>
+            <p>Enabled Text Area (no maxlength)</p>
+            <textarea class="mytest"></textarea>
+        </div>
+
+        <div>
+            <p>Enabled Text Area 2 (html maxlength)</p>
+            <textarea class="mytest" maxlength="100"></textarea>
+        </div>
+
+        <div>
+            <p>Not Enabled Text Area</p>
+            <textarea></textarea>
+        </div>
+    </body>
+
+</html>
